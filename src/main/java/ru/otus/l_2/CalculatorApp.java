@@ -13,14 +13,13 @@ public class CalculatorApp {
             System.out.println("Enter the second number: ");
             int num2 = sc.nextInt();
 
-            System.out.println("Enter the operation number: 1 +, 2 -, 3 *, 4 /");
+            System.out.println("Enter the operation number: 1 +, 2 -, 3 *");
             int operation = sc.nextInt();
 
             String result = switch (operation) {
                 case 1 -> num1 + " + " + num2 + " = " + (num1 + num2);
                 case 2 -> num1 + " - " + num2 + " = " + (num1 - num2);
                 case 3 -> num1 + " * " + num2 + " = " + (num1 * num2);
-                case 4 -> num1 + " / " + num2 + " = " + (num1 / num2);
                 default -> "Such an operation does not exist";
             };
 
