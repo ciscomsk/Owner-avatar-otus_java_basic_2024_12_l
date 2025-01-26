@@ -9,6 +9,8 @@ public class CalculatorApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // Added some feature
+        // Some fix after code review
         while (true) {
             System.out.println("Enter the first number: ");
             int num1 = sc.nextInt();
