@@ -1,6 +1,9 @@
 package ru.otus.l_2;
 
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class CalculatorApp {
     public static void main(String[] args) {
@@ -29,7 +32,8 @@ public class CalculatorApp {
             sc.nextLine(); // сброс сканера
 
             String answer = sc.nextLine();
-            if (!answer.equals("y")) {
+            Set<String> positiveAnswers = new HashSet<>(Arrays.asList("y", "Y"));
+            if (!positiveAnswers.contains(answer)) {
                 break;
             }
         }
